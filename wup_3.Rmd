@@ -16,8 +16,10 @@ davisdata <- read.csv(file="UCDavis.csv")
 ```
 ## Our Goal is to answer this question Is there a difference between the alcohol consumed between the row
 ## you choose to sit in??
-$H_0$ The is no difference in alcohol consumption based on where on sits in class
-$H_A$ The is a difference in alcohol consumption based on where on sita in class
+
+$H_0$ The is no difference in alcohol consumption based on where on sits in class  
+$H_A$ The is a difference in alcohol consumption based on where on sits in class
+
 ## Now with ggplot - first select the basic data
 
 ```{r}
@@ -28,7 +30,9 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 ```{r}
 basicCN + geom_boxplot()
 ```
-  The boxplot shows that the people who sit in the back of the class drink more alcohol .
+  
+  
+  The boxplot shows that the people who sit in the back of the class drink more alcohol than the individual who sit in the front .
   
 ### get fancy  
 
@@ -50,6 +54,12 @@ summary.aov(model1)
 ```
 
 
-## Conclusions
+```{r}
+plot(TukeyHSD(model1))
+```
 
+P value is a small number 0.00016  so we reject the null hypothesis the is no difference in alcohol consumption based on where on sits in class.
+
+## Conclusions
+The drunks hang out in the back row ,unlike the people in the front and middle they consume less alcohol.So we reject the null the hypothesis becuase there is a difference in sitting and consumption .
 

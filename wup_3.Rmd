@@ -31,7 +31,7 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 basicCN + geom_boxplot()
 ```
   
-  
+ 
   The boxplot shows that the people who sit in the back of the class drink more alcohol than the individual who sit in the front .
   
 ### get fancy  
@@ -44,7 +44,7 @@ basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='e
 ```{r}
 favstats(alcohol~Seat,data=davisdata)
 ```
- According to the 
+ 
 
 ## Inferential Tests
 
@@ -58,8 +58,8 @@ summary.aov(model1)
 plot(TukeyHSD(model1))
 ```
 
-P value is a small number 0.00016  so we reject the null hypothesis the is no difference in alcohol consumption based on where on sits in class.
+P value is a small number 0.00016  so we reject the null hypothesis the is no difference in alcohol consumption based on where on sits in class.The turkey model show an internal of zero for middle front  meaning there is no difference in sitting where students sit.
 
 ## Conclusions
-The drunks hang out in the back row ,unlike the people in the front and middle they consume less alcohol.So we reject the null the hypothesis becuase there is a difference in sitting and consumption .
+The drunks hang out in the back row ,unlike the people in the front and middle they consume less alcohol.So we reject the null the hypothesis because there is a difference in sitting and consumption .The p vaule results small whihc will be hard to depilcate the results.
 

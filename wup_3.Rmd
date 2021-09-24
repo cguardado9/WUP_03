@@ -32,7 +32,7 @@ basicCN + geom_boxplot()
 ```
   
  
-  The boxplot shows that the people who sit in the back of the class drink more alcohol than the individual who sit in the front .
+  The boxplot shows that the people who sit in the back of the class drink more alcohol than the individual who sit in the front and middle  .
   
 ### get fancy  
 
@@ -61,5 +61,5 @@ plot(TukeyHSD(model1))
 P value is a small number 0.00016  so we reject the null hypothesis the is no difference in alcohol consumption based on where on sits in class.The turkey model show an internal of zero for middle front  meaning there is no difference in sitting where students sit.
 
 ## Conclusions
-The drunks hang out in the back row ,unlike the people in the front and middle they consume less alcohol.So we reject the null the hypothesis because there is a difference in sitting and consumption .The p vaule results small whihc will be hard to depilcate the results.
+The drunks hang out in the back row ,unlike the people in the front and middle they consume less alcohol.So we reject the null the hypothesis because there is a difference in sitting and consumption .The p vaule results are small which will be hard to depilcate the results.
 
